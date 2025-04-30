@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🚦 AI Traffic Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #eef2f3;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚦 AI Traffic Management System</h1>
+    <h2>Real-Time Traffic Status</h2>
+    <p>Monitor and analyze live traffic congestion</p>
+
+    <button onclick="checkTraffic()">Check Traffic Status</button>
+
+    <div id="status">Current Status: Moderate Traffic Detected 🚗🚗🚗</div>
+
+    <script>
+        function checkTraffic() {
+            document.getElementById("status").innerText = "Checking real-time traffic data...";
+            setTimeout(() => {
+                document.getElementById("status").innerText = "Current Status: Moderate Traffic Detected 🚗🚗🚗";
+            }, 1500);
+        }
+    </script>
+
+</body>
+</html>
